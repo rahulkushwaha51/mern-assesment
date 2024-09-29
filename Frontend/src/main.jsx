@@ -8,11 +8,13 @@ import Layout from './component/layout/Layout.jsx'
 import { PersistGate } from 'redux-persist/integration/react'
 import store, { persistor } from './component/redux/store/store'
 import { Provider } from 'react-redux'
+import Login from './component/auth/Login.jsx'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
+      <Route index element={<Login />} />
       <Route path='/*' element={<App />} />
     </Route>
   ))
