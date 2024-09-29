@@ -12,7 +12,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-  const {isAuthenticated, error, message } = useSelector((state) => state.user);
+  const { isAuthenticated, error, message } = useSelector((state) => state.user);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ const Login = () => {
 
   return (
     <div>
-  
+
       <div className="login">
         <div className="login-intro">
           <h2>Login</h2>
@@ -76,11 +76,7 @@ const Login = () => {
               </Link>
               here
             </p>
-            <p>
-              <Link to="/forgetpassword" className="forgot-password-btn">
-                Forgot Password?
-              </Link>
-            </p>
+
           </div>
         </form>
       </div>
