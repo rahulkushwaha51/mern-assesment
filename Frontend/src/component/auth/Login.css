@@ -1,0 +1,77 @@
+/* Login.css */
+
+.login {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.login-intro {
+    background-color: var(--background-color-body);
+    padding: 2rem;
+    text-align: center;
+}
+
+.login-intro h2 {
+    padding-bottom: 5rem;
+    font-size: larger;
+}
+
+.login-form {
+    width: 33%;
+    padding: 2rem 1.25rem;
+}
+.login-form input {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.1875rem;
+    background-color: var(--background-color-body);
+}
+
+.login-form button {
+    width: 100%;
+}
+.login-action {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.signup-link {
+    color: rgb(20, 139, 10);
+
+}
+
+.forgot-password-btn {
+    border: none;
+    color: rgb(18, 95, 176);
+    cursor: pointer;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 30rem) {
+    .login{
+        flex-direction: column;
+    }
+    .login-form {
+        width: 100%;
+    }
+}
