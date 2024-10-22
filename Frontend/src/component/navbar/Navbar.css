@@ -89,13 +89,20 @@
     }
 
     .logo {
-        padding: 0 2rem;
+        padding:0;
+        height: 100%;
+        width: 3rem;
     }
 
+   
     .hamburger {
         display: flex;
         flex-direction: column;
         cursor: pointer;
+    }
+
+    .hamburger .bar {
+        background-color: white;
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -115,12 +122,13 @@
 
     .menu {
         position: absolute;
-        top: 3rem;
+        top: 100%;
         left: 0;
         padding: 0.5rem 1rem;
         min-width: 50%;
         height: 100vh;
-        background-color: rgba(255, 255, 255);
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -132,11 +140,12 @@
 
     .link {
         transition: 1000ms ease-in-out;
-        margin-right: 2rem;    }
+        margin-right: 2rem;
+    }
 
-        .link a{
-            color: black;
-        }
+    .link a {
+        color: rgb(255, 255, 255);
+    }
 
     .menu.open {
         transform: translateX(0);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "./Navbar.css";
@@ -39,8 +39,8 @@ const Navbar = () => {
         <span className="bar"></span>
       </div>
       <img src={logo} className="logo" alt="Logo" />
-      <div>
-        <ul className={`menu ${isOpen ? "open" : ""}`}>
+     
+        <menu className={`menu ${isOpen ? "open" : ""}`}>
           {links.map(({ id, link, path }) => (
             <li key={id} className="link">
               <Link to={path}>{link}</Link>
@@ -63,8 +63,8 @@ const Navbar = () => {
               </button>
             </li>
           )}
-        </ul>
-      </div>
+        </menu>
+      
     </nav>
   );
 };
